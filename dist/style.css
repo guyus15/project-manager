@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+
+body, h1, h2, h3, p, li, input{
+    padding:0;
+    margin:0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+nav{
+    width:100%;
+    min-height: 8vh;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1{
+    text-align:center;
+    color:rgb(241, 241, 241);
+}
+
+.container{
+    width:100%;
+    height:90vh;
+    display:grid;
+    grid-template-columns: 250px auto;
+}
+
+.project-container{
+    color:white;
+    padding:20px 10px;
+    background-color: rgb(77, 77, 240);
+    max-width: 300px;
+}
+
+.tasks-container{
+    padding:20px 5px;
+}
+
+.flex-container{
+    display: flex;
+    width:90%;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.task{
+    padding: 6px 0;
+}
+
+.project-title{
+    padding:0 5px;
+}
+
+.project p:first-child{
+    margin:15px 0 5px 0;
+}
+
+.project p{
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.active{
+    color:rgb(194, 191, 191);
+}
+
+.btn{
+    border:none;
+    background-color: transparent;
+    cursor:pointer;
+}
+
+.project-description{
+    padding:5px;
+}
+
+.tasks-header{
+    padding:0 5px;
+}
+
+.new-project-btn{
+    width:100%;
+    color:white;
+    font-size: large;
+}
+
+.new-project-btn:hover{
+    color:rgb(194, 191, 191);
+}
+
+.new-task-btn{
+    width:100%;
+    font-size:large;
+}
+
+.form-container{
+    pointer-events: none;
+    opacity: 0;
+    left:50%;
+    top:30%;
+    position: absolute;
+    transform: translate(-50%);
+    width:40%;
+    background-color:white;
+    padding:40px;
+    border:solid 1px white;
+    border-radius:5px;
+    box-shadow: 10px 10px 40px rgb(39, 39, 39);
+}
+
+
+.input{
+    padding:7px 0;
+}
+
+.form-title{
+    padding-bottom:15px;
+}
+
+.form-label{
+    margin-bottom:20px;
+}
+
+.text-input{
+    margin:5px 0;
+}
+
+.form-submit-btn{
+    border-radius:3px;
+    padding:5px 10px;
+    background-color:rgb(77, 77, 240);
+    color:white;
+}
+
+.task-date{
+    padding:5px 0;
+    font-size: smaller;
+    opacity: 70%;
+}
+
+.task-details{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed-container{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius:50%;
+}
+.completed-container.completed{
+    background-color: lightgreen;
+}
+
+.completed-container:hover{
+    background-color: lightgray;
+}
+
+.danger-btn{
+    background-color: rgb(245, 59, 59);
+    color:white;
+    border-radius: 2px;
+}

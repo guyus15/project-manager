@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Project Manager</title>
+</head>
+<body>
+    <nav>
+        <h1>Project Manager</h1>
+    </nav>
+
+    <div class="container">
+        <div class="project-container">
+            <h2 class="container-title">Projects</h2>
+            <div class="projects">
+
+            </div>
+            <button class="btn new-project-btn">
+                +
+            </button>
+        </div>
+        <div class="tasks-container">
+            <div class="flex-container">
+                <h3 class="project-title"></h3>
+            </div>
+
+            <p class="project-description">
+            </p>
+        </div>
+        <div class="form-container project-form">
+            <h3 class="form-title">New Project</h3>
+            <div class="inputs">
+                <div class="input">
+                    <label for="project-title" class="form-label">Project title</label><br>
+                    <input type="text" id="project-title" name="project-title" class="text-input" placeholder="Enter the title here"><br>
+                </div>
+
+                <div class="input">
+                    <label for="project-description" class="form-label">Project description</label><br>
+                    <input type="text" id="project-description" class="text-input" placeholder="Enter description here">
+                </div>
+
+                <div class="input">
+                    <button class="btn form-submit-btn" id="addProjectBtn">Add Project</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-container task-form">
+            <h3 class="task-title">New Task</h3>
+            <div class="inputs">
+                <div class="input">
+                    <label for="task-text" class="form-label">Task</label><br>
+                    <input type="text" id="task-text" name="task-text" class="text-input" placeholder="Enter the task here"><br>   
+                </div>
+                <div class="input">
+                    <label for="task-date" class="form-label">Due Date</label><br>
+                    <input type="date" id="task-date" name="task-date"><br>   
+                </div>
+                <div class="input">
+                    <button class="btn form-submit-btn" id="addTaskBtn">Add Task</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
